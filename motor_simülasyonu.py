@@ -10,7 +10,6 @@ Not:
 Bu, parametreleri açık bir yaklaşık mühendislik modelidir; üretici ECU yazılımı
 veya gerçek motor dinamometresiyle doğrulanmış bir motor modeli değildir.
 """
-
 import argparse
 import math
 import os
@@ -19,7 +18,7 @@ import sys
 import time
 
 
-# ANSI terminal renkleri
+# terminal renkleri oluşturma
 RESET = "\033[0m"
 BOLD = "\033[1m"
 DIM = "\033[2m"
@@ -54,7 +53,7 @@ class DieselVehicleModel:
     Tork eğrisi ve araç parametreleri örnek kalibrasyon değerleridir.
     Belirli bir araç markası/modeli için fabrika verisi olarak değerlendirilmemeli.
     """
-
+    # başlangıç durumunu tanımlama 
     IDLE_RPM = 800.0
     MAX_RPM = 4500.0
 
