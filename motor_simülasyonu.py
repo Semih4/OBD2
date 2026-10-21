@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 Dizel ECU Simülatörü - Fiziksel Model V1
 Python standart kütüphanesi yeterlidir.
@@ -203,7 +201,7 @@ class DieselVehicleModel:
             * clutch / self.WHEEL_RADIUS_M
         )
 
-        # Yol yükleri: aerodinamik sürükleme ~v², yuvarlanma ve eğim kuvveti.
+        # Yol yükleri: aerodinamik sürükleme v², yuvarlanma ve eğim kuvveti.
         air_force = (
             0.5 * self.AIR_DENSITY_KG_M3 * self.CD * self.FRONTAL_AREA_M2
             * self.speed_mps * self.speed_mps
